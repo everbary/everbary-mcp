@@ -3,7 +3,7 @@
 Python client for the [eVerbary](https://www.everbary.com) Order API: place certified translation orders (USCIS, courts, universities) from your own software, follow them, and get the finished translation back by webhook.
 
 ```bash
-pip install everbary
+pip install "git+https://github.com/everbary/everbary-mcp#subdirectory=python"
 ```
 
 ```python

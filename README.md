@@ -48,7 +48,7 @@ Add `https://orders.everbary.com/mcp` as a custom connector (developer mode) and
   "mcpServers": {
     "everbary": {
       "command": "npx",
-      "args": ["-y", "everbary-mcp"]
+      "args": ["-y", "github:everbary/everbary-mcp"]
     }
   }
 }
@@ -61,7 +61,7 @@ The first run opens your browser to sign in to eVerbary. To skip the sign-in, pu
   "mcpServers": {
     "everbary": {
       "command": "npx",
-      "args": ["-y", "everbary-mcp"],
+      "args": ["-y", "github:everbary/everbary-mcp"],
       "env": { "EVERBARY_API_KEY": "ev_live_..." }
     }
   }
@@ -76,7 +76,7 @@ If you are building your own integration (case management software, intake forms
 
 - Reference: https://orders.everbary.com/v1/docs
 - Overview and keys: https://www.everbary.com/integrations/api
-- Python: `pip install everbary` ([`python/`](python/))
+- Python: `pip install "git+https://github.com/everbary/everbary-mcp#subdirectory=python"` ([`python/`](python/))
 - Postman: import [`postman/everbary.postman_collection.json`](postman/everbary.postman_collection.json) and set `apiKey`
 
 Test keys (`ev_test_...`) work on every REST endpoint against a sandbox: orders are pretend, nothing is charged or sent to a translator, and each order moves `new` → `in-progress` → `completed` on its own with a sample translation, firing your webhook at every step. Ask support@everbary.com for a test key.
