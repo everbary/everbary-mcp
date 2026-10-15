@@ -1,0 +1,21 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+  "name": "com.everbary.www/orders",
+  "title": "eVerbary certified translations",
+  "description": "Order certified translations (USCIS, courts, universities) and follow them from any MCP client.",
+  "websiteUrl": "https://www.everbary.com/integrations/ai-assistants",
+  "repository": { "url": "https://github.com/everbary/everbary-mcp", "source": "github" },
+  "version": "1.0.0",
+  "remotes": [{ "type": "streamable-http", "url": "https://orders.everbary.com/mcp" }],
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "everbary-mcp",
+      "version": "1.0.0",
+      "transport": { "type": "stdio" },
+      "environmentVariables": [
+        { "name": "EVERBARY_API_KEY", "description": "Optional eVerbary API key (ev_live_...). Without it, the first run signs in through the browser.", "isRequired": false, "isSecret": true }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "name": "everbary-mcp",
+  "version": "1.0.0",
+  "description": "Order USCIS-ready certified translations from Claude, ChatGPT, Cursor or any MCP client. Local stdio bridge to the eVerbary MCP server.",
+  "mcpName": "com.everbary.www/orders",
+  "bin": {
+    "everbary-mcp": "bin/everbary-mcp.js"
+  },
+  "files": [
+    "bin/",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "mcp-remote": "0.14.3"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "certified-translation",
+    "uscis",
+    "translation",
+    "legal",
+    "immigration"
+  ],
+  "homepage": "https://www.everbary.com/integrations/ai-assistants",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/everbary/everbary-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/everbary/everbary-mcp/issues",
+    "email": "support@everbary.com"
+  },
+  "author": "eVerbary, LLC <support@everbary.com> (https://www.everbary.com)",
+  "license": "MIT"
+}

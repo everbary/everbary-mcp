@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling>=1.24"]
+build-backend = "hatchling.build"
+
+[project]
+name = "everbary"
+version = "1.0.0"
+description = "Python client for the eVerbary Order API: place and track USCIS-ready certified translations."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.9"
+authors = [{ name = "eVerbary, LLC", email = "support@everbary.com" }]
+dependencies = ["requests>=2.28"]
+keywords = ["certified translation", "uscis", "translation api", "legal", "immigration", "everbary"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent",
+  "Topic :: Office/Business",
+  "Intended Audience :: Legal Industry",
+]
+
+[project.urls]
+Homepage = "https://www.everbary.com/integrations/api"
+Documentation = "https://orders.everbary.com/v1/docs"
+Source = "https://github.com/everbary/everbary-mcp"
+Issues = "https://github.com/everbary/everbary-mcp/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/everbary"]
