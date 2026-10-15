@@ -39,7 +39,7 @@ claude mcp add --transport http everbary https://orders.everbary.com/mcp
 
 ### ChatGPT
 
-Use the eVerbary app from the ChatGPT apps directory, or add `https://orders.everbary.com/mcp` as a connector in developer mode.
+Add `https://orders.everbary.com/mcp` as a custom connector (developer mode) and sign in with your eVerbary account.
 
 ### Cursor, VS Code, Windsurf and other stdio clients
 
