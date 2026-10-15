@@ -48,7 +48,7 @@ Add `https://orders.everbary.com/mcp` as a custom connector (developer mode) and
   "mcpServers": {
     "everbary": {
       "command": "npx",
-      "args": ["-y", "github:everbary/everbary-mcp"]
+      "args": ["-y", "everbary-mcp"]
     }
   }
 }
@@ -61,7 +61,7 @@ The first run opens your browser to sign in to eVerbary. To skip the sign-in, pu
   "mcpServers": {
     "everbary": {
       "command": "npx",
-      "args": ["-y", "github:everbary/everbary-mcp"],
+      "args": ["-y", "everbary-mcp"],
       "env": { "EVERBARY_API_KEY": "ev_live_..." }
     }
   }
