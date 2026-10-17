@@ -8,7 +8,7 @@
     "url": "https://github.com/everbary/everbary-mcp",
     "source": "github"
   },
-  "version": "1.0.1",
+  "version": "1.0.2",
   "remotes": [
     {
       "type": "streamable-http",
@@ -19,14 +19,14 @@
     {
       "registryType": "npm",
       "identifier": "everbary-mcp",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "transport": {
         "type": "stdio"
       },
       "environmentVariables": [
         {
           "name": "EVERBARY_API_KEY",
-          "description": "Optional eVerbary API key (ev_live_...). Without it, the first run signs in through the browser.",
+          "description": "Optional eVerbary API key: ev_live_... for the account, ev_test_... for the sandbox (pretend orders, nothing charged). Without it, the first run signs in through the browser.",
           "isRequired": false,
           "isSecret": true
         }

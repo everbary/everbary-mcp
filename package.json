@@ -1,6 +1,6 @@
 {
   "name": "everbary-mcp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Order USCIS-ready certified translations from Claude, ChatGPT, Cursor or any MCP client. Local stdio bridge to the eVerbary MCP server.",
   "mcpName": "com.everbary.www/orders",
   "bin": {

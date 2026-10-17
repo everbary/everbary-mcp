@@ -68,6 +68,8 @@ The first run opens your browser to sign in to eVerbary. To skip the sign-in, pu
 }
 ```
 
+A test key (`ev_test_...`) in `EVERBARY_API_KEY` runs every tool against the sandbox described below: uploads, quotes, orders and payments are pretend, and nothing is charged or sent to a translator.
+
 The bridge is a thin wrapper around [mcp-remote](https://github.com/geelen/mcp-remote): nothing runs locally except the connection.
 
 ## REST API
@@ -79,7 +81,7 @@ If you are building your own integration (case management software, intake forms
 - Python: `pip install everbary` ([`python/`](python/))
 - Postman: import [`postman/everbary.postman_collection.json`](postman/everbary.postman_collection.json) and set `apiKey`
 
-Test keys (`ev_test_...`) work on every REST endpoint against a sandbox: orders are pretend, nothing is charged or sent to a translator, and each order moves `new` → `in-progress` → `completed` on its own with a sample translation, firing your webhook at every step. Ask support@everbary.com for a test key.
+Test keys (`ev_test_...`) work on every REST endpoint and on the MCP server against a sandbox: orders are pretend, nothing is charged or sent to a translator, and each order moves `new` → `in-progress` → `completed` on its own with a sample translation, firing your webhook at every step. Ask support@everbary.com for a test key.
 
 Case management software can also open a hosted checkout with the documents already attached (`POST /v1/checkout/sessions`). Try the demo: https://orders.everbary.com/checkout/demo
 
